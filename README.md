@@ -26,6 +26,8 @@ Serialize an object including it's function:
     typeof objS === 'string';
     serialize.unserialize(objS).say() === 'hi Bob';
 
+Serialize an object with a sub object:
+
     var objWithSubObj = {
       obj: {
         name: 'Jeff',
