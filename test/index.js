@@ -5,7 +5,8 @@ var obj = {
   name: 'Bob',
   say: function() {
     return 'hi ' + this.name;
-  }
+  },
+  nl: null
 };
 
 var objWithSubObj = {
@@ -57,7 +58,9 @@ describe('Serialize#serialize(obj, ignoreNativeCode)', function() {
 
 describe('Serialize#unserialize(obj)', function() {
   it('should return an object', function() {
-    serialize.unserialize(serialize.serialize(obj)).should.be.a('object');
+    var objSer = serialize.unserialize(serialize.serialize(obj));
+    objSer.should.be.a('object');
+    (null === objSer.nl).should.be.true;
   });
 
   it('should be unserialize a object including a function', function() {
