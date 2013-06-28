@@ -24,6 +24,13 @@ var objWithNativeCode = {
   method: {}.hasOwnProperty
 };
 
+var objWithNativeCode = {
+  obj: {
+    method: {}.hasOwnProperty
+  },
+  method: {}.hasOwnProperty
+};
+
 describe('Serialize#serialize(obj, ignoreNativeCode)', function() {
   it('should return a string', function() {
     serialize.serialize(obj).should.be.a('string');
