@@ -48,7 +48,7 @@ describe('Serialize#serialize(obj, ignoreNativeCode)', function() {
   });
 });
 
-describe('Serialize#unserialize(ignoreNativeCode)', function() {
+describe('Serialize#unserialize(obj)', function() {
   it('should return an object', function() {
     serialize.unserialize(serialize.serialize(obj)).should.be.a('object');
   });
