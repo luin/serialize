@@ -1,6 +1,6 @@
 {
   "name": "node-serialize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Zihua Li",
   "description": "Serialize a object including it's function into a JSON.",
   "homepage": "https://github.com/luin/serialize",
