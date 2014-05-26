@@ -1,6 +1,6 @@
 {
   "name": "node-serialize",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Zihua Li",
   "description": "Serialize a object including it's function into a JSON.",
   "homepage": "https://github.com/luin/serialize",
@@ -12,12 +12,7 @@
     "test": "mocha -R spec"
   },
   "main": "./lib/serialize",
-  "licenses": [
-    {
-      "type": "Apache License 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
+  "licenses": "MIT",
   "engines": [
     "node >=0.6.0"
   ],
