@@ -1,8 +1,25 @@
-# node-serialize
+# Serialize ALL THE THINGS!
 
-Serialize a object including it's function into a JSON.
+Serialize entire Javascript VM object hierarchies.
 
-[![Build Status](https://travis-ci.org/luin/serialize.png?branch=master)](https://travis-ci.org/luin/serialize)
+In addition to what JSON.stringify will do:
+
+-Strings
+-Numbers
+-Arrays (without converting to dictionaries)
+-Objects
+-null
+
+This also handles:
+
+-Circular dependencies (correctly!)
+-Functions (with function bodies, and properties attached! Some limitations apply, YMMV.)
+-Object inheritance (ala prototype and __proto__)
+-Dates (actual Dates, not strings)
+-undefined and Infinity (the real deals, not the strings)
+
+
+[![Build Status](https://travis-ci.org/luin/serialize.png?branch=master)](https://travis-ci.org/shinmojo/serialize)
 
 ## Install
 
