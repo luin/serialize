@@ -63,7 +63,7 @@ var objWithSubObj = {
 
 var objWithSubObjS = serialize.serialize(objWithSubObj);
 typeof objWithSubObjS === 'string';
-serialize.unserialize(objWithSubObjS).say() === 'hi Jeff';
+serialize.unserialize(objWithSubObjS).obj.say() === 'hi Jeff';
 ```
 
 Serialize a circular object:
